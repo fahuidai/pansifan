@@ -9,9 +9,13 @@
 #import "FALoginVC.h"
 #import "FARegisterVC.h"
 #import "FAGetBackPwVC.h"
+#import "AccountUtil.h"
+
 @interface FALoginVC ()
 
 @property (strong,nonatomic) FAAccountBaseVC *nextVC;
+@property (weak, nonatomic) IBOutlet UITextField *userNameField;
+@property (weak, nonatomic) IBOutlet UITextField *passWordField;
 
 @end
 
@@ -26,6 +30,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+//登陆
+
+- (IBAction)login:(UIButton *)sender {
+    
+    
+    [AccountUtil saveAccount:self.userNameField.text];
+    [AccountUtil savePicPwString:nil];
+    
 }
 
 //转入注册页面

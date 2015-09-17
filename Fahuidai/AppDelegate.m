@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "WMCommon.h"
-
+#import "IMPassWordView.h"
+#import "AccountUtil.h"
 @interface AppDelegate ()
 
 @end
@@ -41,7 +42,13 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    if (isLogin && havePicPw) {
+        IMPassWordView *pass = [[IMPassWordView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+        [self.window addSubview:pass];
+    }
+    
+    
+    //[pass setNeedsDisplay];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

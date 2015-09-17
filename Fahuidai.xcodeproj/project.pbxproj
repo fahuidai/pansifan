@@ -11,6 +11,8 @@
 		16E26DCB1BA9C57300C98CF6 /* FAMakebidVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E26DC91BA9C57300C98CF6 /* FAMakebidVC.xib */; };
 		16E26DD01BA9C58F00C98CF6 /* FAMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E26DCE1BA9C58F00C98CF6 /* FAMoreVC.m */; };
 		16E26DD11BA9C58F00C98CF6 /* FAMoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E26DCF1BA9C58F00C98CF6 /* FAMoreVC.xib */; };
+		16E29D3D1BAA96F300F6F047 /* IMPassWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E29D3C1BAA96F300F6F047 /* IMPassWordView.m */; };
+		16E29D441BAAA6E500F6F047 /* IMRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E29D431BAAA6E500F6F047 /* IMRect.m */; };
 		16E316941BA95C9D00147550 /* AccountUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E316931BA95C9D00147550 /* AccountUtil.m */; };
 		16E316971BA95D0C00147550 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E316961BA95D0C00147550 /* User.m */; };
 		16E3169A1BA9631300147550 /* FABaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E316991BA9631300147550 /* FABaseVC.m */; };
@@ -84,6 +86,10 @@
 		16E26DCD1BA9C58F00C98CF6 /* FAMoreVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAMoreVC.h; sourceTree = "<group>"; };
 		16E26DCE1BA9C58F00C98CF6 /* FAMoreVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAMoreVC.m; sourceTree = "<group>"; };
 		16E26DCF1BA9C58F00C98CF6 /* FAMoreVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAMoreVC.xib; sourceTree = "<group>"; };
+		16E29D3B1BAA96F300F6F047 /* IMPassWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMPassWordView.h; sourceTree = "<group>"; };
+		16E29D3C1BAA96F300F6F047 /* IMPassWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMPassWordView.m; sourceTree = "<group>"; };
+		16E29D421BAAA6E500F6F047 /* IMRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMRect.h; sourceTree = "<group>"; };
+		16E29D431BAAA6E500F6F047 /* IMRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMRect.m; sourceTree = "<group>"; };
 		16E316921BA95C9D00147550 /* AccountUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountUtil.h; sourceTree = "<group>"; };
 		16E316931BA95C9D00147550 /* AccountUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountUtil.m; sourceTree = "<group>"; };
 		16E316951BA95D0C00147550 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -221,6 +227,15 @@
 				16E26DCF1BA9C58F00C98CF6 /* FAMoreVC.xib */,
 			);
 			name = more;
+			sourceTree = "<group>";
+		};
+		16E29D3E1BAA972500F6F047 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				16E29D3B1BAA96F300F6F047 /* IMPassWordView.h */,
+				16E29D3C1BAA96F300F6F047 /* IMPassWordView.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		16E3168F1BA95C0100147550 /* home */ = {
@@ -435,6 +450,8 @@
 				16E316961BA95D0C00147550 /* User.m */,
 				16E316AB1BA966E100147550 /* FABidModel.h */,
 				16E316AC1BA966E100147550 /* FABidModel.m */,
+				16E29D421BAAA6E500F6F047 /* IMRect.h */,
+				16E29D431BAAA6E500F6F047 /* IMRect.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -469,6 +486,7 @@
 		16ED20581BA8027100A1250A /* Fahuidai */ = {
 			isa = PBXGroup;
 			children = (
+				16E29D3E1BAA972500F6F047 /* view */,
 				16E316911BA95C5E00147550 /* utils */,
 				16F7B8F51BA8544E00B7026C /* back@3x.png */,
 				16E47D2C1BA82DB400FAFDF3 /* category */,
@@ -637,6 +655,7 @@
 				16E316F91BA97C0B00147550 /* UIScrollView+MJRefresh.m in Sources */,
 				16E316F81BA97C0B00147550 /* UIScrollView+MJExtension.m in Sources */,
 				16E47D051BA812AD00FAFDF3 /* FAMenuVC.m in Sources */,
+				16E29D441BAAA6E500F6F047 /* IMRect.m in Sources */,
 				16E316E91BA97C0B00147550 /* MJRefreshBackFooter.m in Sources */,
 				16E26DCA1BA9C57300C98CF6 /* FAMakebidVC.m in Sources */,
 				16E3169E1BA9636200147550 /* FAHomeVC.m in Sources */,
@@ -655,6 +674,7 @@
 				16F7B8F31BA8505000B7026C /* FAGetBackPwVC.m in Sources */,
 				16E316941BA95C9D00147550 /* AccountUtil.m in Sources */,
 				16E316F21BA97C0B00147550 /* MJRefreshBackStateFooter.m in Sources */,
+				16E29D3D1BAA96F300F6F047 /* IMPassWordView.m in Sources */,
 				16E316EE1BA97C0B00147550 /* MJRefreshAutoNormalFooter.m in Sources */,
 				16E47D141BA817EA00FAFDF3 /* WMPopAnimation.m in Sources */,
 				16E316B21BA9684800147550 /* FAUserDetailVC.m in Sources */,

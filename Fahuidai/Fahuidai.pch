@@ -13,4 +13,5 @@
 #define ScreenSize [UIScreen mainScreen].bounds.size
 
 #define isLogin [AccountUtil checkForLogin]
+#define havePicPw [AccountUtil checkForPicPw]
 #endif
