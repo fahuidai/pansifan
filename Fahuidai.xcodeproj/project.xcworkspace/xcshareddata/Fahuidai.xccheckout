@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CAA51BBC-B53A-45E7-9AC2-751F84191B93</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>48E96294F5B06DE16EC28DDAF4DD67245DA0E484</key>
+		<string>https://github.com/projectmortal/Fahuidai.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fahuidai.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>48E96294F5B06DE16EC28DDAF4DD67245DA0E484</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/projectmortal/Fahuidai.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>48E96294F5B06DE16EC28DDAF4DD67245DA0E484</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>48E96294F5B06DE16EC28DDAF4DD67245DA0E484</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fahuidai</string>
+		</dict>
+	</array>
+</dict>
+</plist>

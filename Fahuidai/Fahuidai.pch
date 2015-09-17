@@ -1,0 +1,16 @@
+//
+//  Fahuidai.pch
+//  Fahuidai
+//
+//  Created by mortal on 15/9/15.
+//  Copyright (c) 2015年 fahuidai. All rights reserved.
+//
+
+#ifndef Fahuidai_Fahuidai_pch
+#define Fahuidai_Fahuidai_pch
+
+
+#define ScreenSize [UIScreen mainScreen].bounds.size
+
+#define isLogin [AccountUtil checkForLogin]
+#endif
