@@ -8,6 +8,7 @@
 
 #import "FAHomeVC.h"
 #import "FABidDetailVC.h"
+#import "FABidCell.h"
 #import "MJRefresh/MJRefresh.h"
 @interface FAHomeVC ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -46,11 +47,9 @@
 }
 //配置cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"test"];
-    return cell
-    ;
+    FABidCell *cell = [FABidCell cellWithBid:nil for:tableView];
+    return cell;
 }
-
 //选择某条时进入详细页面
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     FABidDetailVC *bidVC = [[FABidDetailVC alloc]init];
@@ -58,7 +57,10 @@
     
     [self.navigationController pushViewController:bidVC animated:YES];
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    return 110;
+}
 - (void) refreshData{
     NSLog(@"刷新");
     [self.tableView.header endRefreshing];

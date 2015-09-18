@@ -9,6 +9,7 @@
 #import "IMPassWordView.h"
 #import "IMRect.h"
 #import "AccountUtil.h"
+#import "UIView+Animation.h"
 #define PointW 70 //圆直径
 #define Distance (ScreenSize.width- PointW*3)/4 //圆间距
 #define LineColor [UIColor colorWithRed:0 green:210 blue:0 alpha:1] //线颜色
@@ -31,6 +32,9 @@
     self = [super initWithFrame:frame];
     
     if (self) {
+        id vc =[UIApplication sharedApplication].keyWindow.rootViewController;
+        //__weak id<IMPassWordViewDelegate> weakvc = vc;
+        self.delegate = vc;
         //配置导航栏
         UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, ScreenSize.width, 64)];
         toolBar.backgroundColor = [UIColor blueColor];
@@ -77,10 +81,13 @@
             [self.array addObject:rect];
             
         }
-        UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(Distance, ScreenSize.height/2 - (Distance*2 + PointW*3)/2 + 2*(Distance + PointW) + PointW +Distance, 100, 40)];
-        [btn setTitle:@"忘记手势？" forState:UIControlStateNormal];
-        [btn addTarget:self action:@selector(forgetPw) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:btn];
+        if (havePicPw) {
+            UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(Distance, ScreenSize.height/2 - (Distance*2 + PointW*3)/2 + 2*(Distance + PointW) + PointW +Distance, 100, 40)];
+            [btn setTitle:@"忘记手势？" forState:UIControlStateNormal];
+            [btn addTarget:self action:@selector(forgetPw) forControlEvents:UIControlEventTouchUpInside];
+            [self addSubview:btn];
+        }
+        
     }
     
     return self;
@@ -90,8 +97,17 @@
  */
 - (void)forgetPw{
     //删除用户，重新登陆
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"请重新登录" message:@"登录后可重新设置手势!" delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles: nil];
+    [alertView show];
     [AccountUtil saveAccount:nil];
-    [self removeFromSuperview];
+    if (self.delegate) {
+        [self.delegate doForgetPw];
+    }
+    [self removeSelfFromBottom];
+    
+    self.passBlock();
+    //代理方法 在viewContrller中实现
+    
 }
 
 - (void)drawRect:(CGRect)rect {
@@ -158,16 +174,37 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     
+    
+    //如果不存在手势密码
     if (!self.passWordString) {
+        
+        if (self.password.count<5) {
+            UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"至少要5个点" delegate:self cancelButtonTitle:@"确定" otherButtonTitles: nil];
+            [alert show];
+            [self.password removeAllObjects];
+            [self setNeedsDisplay];
+            
+            return;
+        }
         self.passWordString = [self.password description];
         [self.password removeAllObjects];
         [self setNeedsDisplay];
         self.tilte.text = @"请再次绘制图案";
-    }else {
+    }else
+    //如果存在
+    {
         NSString *typeIn = [self.password description];
+        //再次输入相同
         if ([typeIn isEqualToString:self.passWordString]) {
             [AccountUtil savePicPwString:self.passWordString];
-            [self removeFromSuperview];
+            if (self.passBlock) {
+                self.passBlock();
+            }
+            
+            
+            [self removeSelfFromBottom];
+            
+            
         }else{
             if ([self.tilte.text isEqualToString:@"请再次绘制图案"]) {
                 self.passWordString = nil;

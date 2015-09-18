@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol IMPassWordViewDelegater<NSObject>
+typedef void(^PassBlock)();
+@protocol IMPassWordViewDelegate<NSObject>
 @optional
-
+//当点击忘记手势的时候调用这个代理
 - (void)doForgetPw;
 @end
 
 @interface IMPassWordView : UIView
 @property (nonatomic,strong) NSMutableArray *array;
+@property (nonatomic,weak)id<IMPassWordViewDelegate> delegate;
+@property (nonatomic,copy)PassBlock passBlock;
 @end

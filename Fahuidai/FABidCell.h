@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class FABidModel;
 @interface FABidCell : UITableViewCell
 
++ (instancetype)cellWithBid:(FABidModel *)bid for:(UITableView *)tableView;
 @end

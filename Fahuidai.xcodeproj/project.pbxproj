@@ -8,7 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		068137E71BAA84D000DE999F /* MMMBankSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 068137E61BAA84D000DE999F /* MMMBankSDK.bundle */; };
-		068137E91BAA84D800DE999F /* libMoreSDK_1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */; };
+		068137E91BAA84D800DE999F /* libMoreSDK_1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		1690D5FA1BAC0FBE004080F8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
+		1690D60B1BAC647B004080F8 /* SDBallProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5FD1BAC647B004080F8 /* SDBallProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1690D60C1BAC647B004080F8 /* SDBaseProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5FF1BAC647B004080F8 /* SDBaseProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1690D60D1BAC647B004080F8 /* SDLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6011BAC647B004080F8 /* SDLoopProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1690D60E1BAC647B004080F8 /* SDPieLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6031BAC647B004080F8 /* SDPieLoopProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1690D60F1BAC647B004080F8 /* SDPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6051BAC647B004080F8 /* SDPieProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1690D6101BAC647B004080F8 /* SDRotationLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6081BAC647B004080F8 /* SDRotationLoopProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1690D6111BAC647B004080F8 /* SDTransparentPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1690D6141BAC6740004080F8 /* FABidCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6131BAC6740004080F8 /* FABidCellView.m */; settings = {ASSET_TAGS = (); }; };
 		16E26DCA1BA9C57300C98CF6 /* FAMakebidVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E26DC81BA9C57300C98CF6 /* FAMakebidVC.m */; };
 		16E26DCB1BA9C57300C98CF6 /* FAMakebidVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E26DC91BA9C57300C98CF6 /* FAMakebidVC.xib */; };
 		16E26DD01BA9C58F00C98CF6 /* FAMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E26DCE1BA9C58F00C98CF6 /* FAMoreVC.m */; };
@@ -86,6 +95,25 @@
 		068137E51BAA71FE00DE999F /* MMMEventEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMEventEnum.h; sourceTree = "<group>"; };
 		068137E61BAA84D000DE999F /* MMMBankSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MMMBankSDK.bundle; sourceTree = "<group>"; };
 		068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMoreSDK_1.2.2.a; sourceTree = "<group>"; };
+		1690D5F81BAC0FBE004080F8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		1690D5FC1BAC647B004080F8 /* SDBallProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBallProgressView.h; sourceTree = "<group>"; };
+		1690D5FD1BAC647B004080F8 /* SDBallProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBallProgressView.m; sourceTree = "<group>"; };
+		1690D5FE1BAC647B004080F8 /* SDBaseProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBaseProgressView.h; sourceTree = "<group>"; };
+		1690D5FF1BAC647B004080F8 /* SDBaseProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBaseProgressView.m; sourceTree = "<group>"; };
+		1690D6001BAC647B004080F8 /* SDLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLoopProgressView.h; sourceTree = "<group>"; };
+		1690D6011BAC647B004080F8 /* SDLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLoopProgressView.m; sourceTree = "<group>"; };
+		1690D6021BAC647B004080F8 /* SDPieLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPieLoopProgressView.h; sourceTree = "<group>"; };
+		1690D6031BAC647B004080F8 /* SDPieLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPieLoopProgressView.m; sourceTree = "<group>"; };
+		1690D6041BAC647B004080F8 /* SDPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPieProgressView.h; sourceTree = "<group>"; };
+		1690D6051BAC647B004080F8 /* SDPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPieProgressView.m; sourceTree = "<group>"; };
+		1690D6061BAC647B004080F8 /* SDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDProgressView.h; sourceTree = "<group>"; };
+		1690D6071BAC647B004080F8 /* SDRotationLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRotationLoopProgressView.h; sourceTree = "<group>"; };
+		1690D6081BAC647B004080F8 /* SDRotationLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRotationLoopProgressView.m; sourceTree = "<group>"; };
+		1690D6091BAC647B004080F8 /* SDTransparentPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTransparentPieProgressView.h; sourceTree = "<group>"; };
+		1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTransparentPieProgressView.m; sourceTree = "<group>"; };
+		1690D6121BAC6740004080F8 /* FABidCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FABidCellView.h; sourceTree = "<group>"; };
+		1690D6131BAC6740004080F8 /* FABidCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FABidCellView.m; sourceTree = "<group>"; };
 		16E26DC71BA9C57300C98CF6 /* FAMakebidVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAMakebidVC.h; sourceTree = "<group>"; };
 		16E26DC81BA9C57300C98CF6 /* FAMakebidVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAMakebidVC.m; sourceTree = "<group>"; };
 		16E26DC91BA9C57300C98CF6 /* FAMakebidVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAMakebidVC.xib; sourceTree = "<group>"; };
@@ -233,6 +261,37 @@
 			path = MoreSDK;
 			sourceTree = "<group>";
 		};
+		1690D5F71BAC0F95004080F8 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				1690D5F81BAC0FBE004080F8 /* MBProgressHUD.h */,
+				1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		1690D5FB1BAC6435004080F8 /* SDProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				1690D5FC1BAC647B004080F8 /* SDBallProgressView.h */,
+				1690D5FD1BAC647B004080F8 /* SDBallProgressView.m */,
+				1690D5FE1BAC647B004080F8 /* SDBaseProgressView.h */,
+				1690D5FF1BAC647B004080F8 /* SDBaseProgressView.m */,
+				1690D6001BAC647B004080F8 /* SDLoopProgressView.h */,
+				1690D6011BAC647B004080F8 /* SDLoopProgressView.m */,
+				1690D6021BAC647B004080F8 /* SDPieLoopProgressView.h */,
+				1690D6031BAC647B004080F8 /* SDPieLoopProgressView.m */,
+				1690D6041BAC647B004080F8 /* SDPieProgressView.h */,
+				1690D6051BAC647B004080F8 /* SDPieProgressView.m */,
+				1690D6061BAC647B004080F8 /* SDProgressView.h */,
+				1690D6071BAC647B004080F8 /* SDRotationLoopProgressView.h */,
+				1690D6081BAC647B004080F8 /* SDRotationLoopProgressView.m */,
+				1690D6091BAC647B004080F8 /* SDTransparentPieProgressView.h */,
+				1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */,
+			);
+			name = SDProgressView;
+			sourceTree = "<group>";
+		};
 		16E26DC61BA9C52700C98CF6 /* makebid */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +363,8 @@
 				16E316A11BA9641700147550 /* FABidCell.h */,
 				16E316A21BA9641700147550 /* FABidCell.m */,
 				16E316A31BA9641700147550 /* FABidCell.xib */,
+				1690D6121BAC6740004080F8 /* FABidCellView.h */,
+				1690D6131BAC6740004080F8 /* FABidCellView.m */,
 			);
 			name = bidCell;
 			sourceTree = "<group>";
@@ -416,6 +477,8 @@
 		16E47D161BA8183200FAFDF3 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				1690D5FB1BAC6435004080F8 /* SDProgressView */,
+				1690D5F71BAC0F95004080F8 /* MBProgressHUD */,
 				16E316BB1BA97C0B00147550 /* MJRefresh */,
 				16E47D171BA8183F00FAFDF3 /* WMMenu */,
 			);
@@ -512,11 +575,8 @@
 		16ED20581BA8027100A1250A /* Fahuidai */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				16E29D3E1BAA972500F6F047 /* view */,
-=======
 				068137E21BAA71FE00DE999F /* include */,
->>>>>>> origin/master
 				16E316911BA95C5E00147550 /* utils */,
 				16F7B8F51BA8544E00B7026C /* back@3x.png */,
 				16E47D2C1BA82DB400FAFDF3 /* category */,
@@ -611,7 +671,7 @@
 				TargetAttributes = {
 					16ED20551BA8027100A1250A = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = X9R5S2Q6U8;
+						DevelopmentTeam = C7MPH98QTJ;
 					};
 					16ED206E1BA8027100A1250A = {
 						CreatedOnToolsVersion = 6.4;
@@ -676,6 +736,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1690D6111BAC647B004080F8 /* SDTransparentPieProgressView.m in Sources */,
 				16E316F31BA97C0B00147550 /* MJRefreshGifHeader.m in Sources */,
 				16E316971BA95D0C00147550 /* User.m in Sources */,
 				16E3169A1BA9631300147550 /* FABaseVC.m in Sources */,
@@ -692,21 +753,28 @@
 				16E26DCA1BA9C57300C98CF6 /* FAMakebidVC.m in Sources */,
 				16E3169E1BA9636200147550 /* FAHomeVC.m in Sources */,
 				16E316F01BA97C0B00147550 /* MJRefreshBackGifFooter.m in Sources */,
+				1690D60D1BAC647B004080F8 /* SDLoopProgressView.m in Sources */,
 				16E47D1C1BA8254100FAFDF3 /* FALoginVC.m in Sources */,
 				16E316F51BA97C0B00147550 /* MJRefreshStateHeader.m in Sources */,
+				1690D60F1BAC647B004080F8 /* SDPieProgressView.m in Sources */,
+				1690D6141BAC6740004080F8 /* FABidCellView.m in Sources */,
 				16E316B61BA96A7500147550 /* FAAssetView.m in Sources */,
 				16E47D291BA82BCC00FAFDF3 /* FARegisterVC.m in Sources */,
 				16E47D0F1BA8176800FAFDF3 /* WMNavigationController.m in Sources */,
 				16E316EA1BA97C0B00147550 /* MJRefreshComponent.m in Sources */,
+				1690D5FA1BAC0FBE004080F8 /* MBProgressHUD.m in Sources */,
 				16E316EC1BA97C0B00147550 /* MJRefreshHeader.m in Sources */,
 				16E316AD1BA966E100147550 /* FABidModel.m in Sources */,
+				1690D60C1BAC647B004080F8 /* SDBaseProgressView.m in Sources */,
 				16E316ED1BA97C0B00147550 /* MJRefreshAutoGifFooter.m in Sources */,
 				16ED205F1BA8027100A1250A /* AppDelegate.m in Sources */,
 				16E47D251BA82B4F00FAFDF3 /* FAAccountBaseVC.m in Sources */,
 				16F7B8F31BA8505000B7026C /* FAGetBackPwVC.m in Sources */,
 				16E316941BA95C9D00147550 /* AccountUtil.m in Sources */,
 				16E316F21BA97C0B00147550 /* MJRefreshBackStateFooter.m in Sources */,
+				1690D60B1BAC647B004080F8 /* SDBallProgressView.m in Sources */,
 				16E29D3D1BAA96F300F6F047 /* IMPassWordView.m in Sources */,
+				1690D60E1BAC647B004080F8 /* SDPieLoopProgressView.m in Sources */,
 				16E316EE1BA97C0B00147550 /* MJRefreshAutoNormalFooter.m in Sources */,
 				16E47D141BA817EA00FAFDF3 /* WMPopAnimation.m in Sources */,
 				16E316B21BA9684800147550 /* FAUserDetailVC.m in Sources */,
@@ -714,6 +782,7 @@
 				16E316E81BA97C0B00147550 /* MJRefreshAutoFooter.m in Sources */,
 				16E316F71BA97C0B00147550 /* MJRefreshConst.m in Sources */,
 				16E316EB1BA97C0B00147550 /* MJRefreshFooter.m in Sources */,
+				1690D6101BAC647B004080F8 /* SDRotationLoopProgressView.m in Sources */,
 				16E26DD01BA9C58F00C98CF6 /* FAMoreVC.m in Sources */,
 				16E47D2F1BA82ED300FAFDF3 /* UIView+Animation.m in Sources */,
 				16E316F41BA97C0B00147550 /* MJRefreshNormalHeader.m in Sources */,
@@ -852,6 +921,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -865,6 +935,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -874,6 +945,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -887,6 +959,7 @@
 					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

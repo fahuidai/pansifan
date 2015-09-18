@@ -7,7 +7,7 @@
 //
 
 #import "FAUserDetailVC.h"
-
+#import "ControllerActivity.h"
 @interface FAUserDetailVC ()
 
 @end
@@ -23,6 +23,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+//充值
+- (IBAction)recharge:(UIButton *)sender {
+    
+}
+
+//提现
+- (IBAction)withdraw:(UIButton *)sender {
 }
 
 /*

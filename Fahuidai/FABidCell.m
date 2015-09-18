@@ -7,7 +7,8 @@
 //
 
 #import "FABidCell.h"
-
+#import "FABidModel.h"
+#import "FABidCellView.h"
 @implementation FABidCell
 
 - (void)awakeFromNib {
@@ -19,5 +20,15 @@
 
     // Configure the view for the selected state
 }
-
++ (instancetype)cellWithBid:(FABidModel *)bid for:(UITableView *)tableView{
+    static NSString *bidCell = @"bidCell";
+    
+    FABidCell *cell = [tableView dequeueReusableCellWithIdentifier:bidCell];
+    if (!cell) {
+        cell = [[FABidCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:bidCell];
+        [cell.contentView addSubview:[[FABidCellView alloc]init]];
+    }
+    
+    return cell;
+}
 @end

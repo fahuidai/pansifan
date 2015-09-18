@@ -16,6 +16,7 @@
 #import "FAMoreVC.h"
 #import "AccountUtil.h"
 #import "FALoginVC.h"
+#import "IMPassWordView.h"
 typedef enum state {
     kStateHome,
     kStateMenu
@@ -25,7 +26,7 @@ static const CGFloat viewSlideHorizonRatio = 0.75;
 static const CGFloat viewHeightNarrowRatio = 0.80;
 static const CGFloat menuStartNarrowRatio  = 0.70;
 
-@interface ViewController () <FAMenuVCDelegate>
+@interface ViewController () <FAMenuVCDelegate,IMPassWordViewDelegate>
 @property (assign, nonatomic) state   sta;              // 状态(Home or Menu)
 @property (assign, nonatomic) CGFloat distance;         // 距离左边的边距
 @property (assign, nonatomic) CGFloat leftDistance;
@@ -235,5 +236,10 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
     }
     
 }
-
+- (void)doForgetPw {
+    [self.messageNav popToRootViewControllerAnimated:YES];
+    [self showMenu];
+    
+    
+}
 @end
