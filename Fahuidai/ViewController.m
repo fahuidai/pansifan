@@ -55,7 +55,7 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
     self.leftDistance = self.common.screenW * viewSlideHorizonRatio;
     
     // 设置背景
-    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"back"]];
+    UIImageView *bg = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"leftbackground"]];
     bg.frame  = [[UIScreen mainScreen] bounds];
     [self.view addSubview:bg];
     

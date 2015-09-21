@@ -32,4 +32,13 @@
         [self removeFromSuperview];
     }];
 }
+
+- (void)moveInY:(CGFloat)y {
+    
+    CGRect rect = self.frame;
+    CGRect newRect = CGRectMake(rect.origin.x, rect.origin.y-y, rect.size.width, rect.size.height);
+    [UIView animateWithDuration:0.2 animations:^{
+        self.frame = newRect;
+    }];
+}
 @end

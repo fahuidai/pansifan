@@ -11,4 +11,5 @@
 @interface UIView (Animation)
 - (void)addSubviewFromBottom:(UIView *) view;
 - (void)removeSelfFromBottom;
+- (void)moveInY:(CGFloat)y;
 @end

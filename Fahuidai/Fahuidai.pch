@@ -11,7 +11,7 @@
 
 
 #define ScreenSize [UIScreen mainScreen].bounds.size
-
+#define isIphone6 ScreenSize.width>=375
 #define isLogin [AccountUtil checkForLogin]
 #define havePicPw [AccountUtil checkForPicPw]
 

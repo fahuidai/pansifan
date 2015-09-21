@@ -8,8 +8,11 @@
 
 #import "FAMenuVC.h"
 #import "FALoginVC.h"
+#import "FAMenuCell.h"
 @interface FAMenuVC ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (weak, nonatomic) IBOutlet UIButton *phoneCallBtn;
 
 @end
 
@@ -20,9 +23,22 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
-   
+    self.tableView.center = self.view.center;
+    self.loginBtn.layer.borderWidth = 0.5;
+    self.loginBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.loginBtn.layer.cornerRadius = 3;
+    
+    self.phoneCallBtn.layer.borderWidth = 0.5;
+    self.phoneCallBtn.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.phoneCallBtn.layer.cornerRadius = 3;
+    
+    if (isIphone6) {
+        self.tableView.rowHeight = 66;
+    }
 }
-
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -37,8 +53,27 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"titleCell"];
-    cell.backgroundColor = [UIColor redColor];
+    UITableViewCell *cell;
+    switch (indexPath.row) {
+        case 0:
+            cell = [FAMenuCell cellWithType:MenuCellTypeHome];
+            break;
+        case 1:
+            cell = [FAMenuCell cellWithType:MenuCellTypeBid];
+            break;
+        case 2:
+            cell = [FAMenuCell cellWithType:MenuCellTypeUser];
+            break;
+        case 3:
+            cell = [FAMenuCell cellWithType:MenuCellTypeMore];
+            break;
+        default:
+            break;
+    }
+    
+    
+    
+    //cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 

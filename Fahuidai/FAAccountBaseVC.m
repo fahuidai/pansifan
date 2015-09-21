@@ -18,11 +18,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.frame = CGRectMake(0, 0, ScreenSize.width, ScreenSize.height);
+    UIToolbar *bar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, ScreenSize.width, 44)];
     
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 80, 80, 44)];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(5,5, 35, 35)];
     [btn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
-    [btn setTitle:@"关闭" forState:UIControlStateNormal];
-    [self.view addSubview:btn];
+    [btn setImage:[UIImage imageNamed:@"CLOSE"] forState:UIControlStateNormal];
+    [bar addSubview:btn];
+    [self.view addSubview:bar];
+    
+    UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"矩形-1"]];
+    self.view.backgroundColor = color;
+    //[self prefersStatusBarHidden];
+    //
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,5 +44,9 @@
         [self.view removeSelfFromBottom];
     }
 }
+- (BOOL)prefersStatusBarHidden{
+    return YES;
+}
+
 
 @end

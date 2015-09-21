@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		068137E71BAA84D000DE999F /* MMMBankSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 068137E61BAA84D000DE999F /* MMMBankSDK.bundle */; };
 		068137E91BAA84D800DE999F /* libMoreSDK_1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		1655E31A1BAEEC9D006B638B /* FATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655E3191BAEEC9D006B638B /* FATextField.m */; settings = {ASSET_TAGS = (); }; };
 		1690D5FA1BAC0FBE004080F8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
 		1690D60B1BAC647B004080F8 /* SDBallProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5FD1BAC647B004080F8 /* SDBallProgressView.m */; settings = {ASSET_TAGS = (); }; };
 		1690D60C1BAC647B004080F8 /* SDBaseProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5FF1BAC647B004080F8 /* SDBaseProgressView.m */; settings = {ASSET_TAGS = (); }; };
@@ -18,6 +19,7 @@
 		1690D6101BAC647B004080F8 /* SDRotationLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6081BAC647B004080F8 /* SDRotationLoopProgressView.m */; settings = {ASSET_TAGS = (); }; };
 		1690D6111BAC647B004080F8 /* SDTransparentPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */; settings = {ASSET_TAGS = (); }; };
 		1690D6141BAC6740004080F8 /* FABidCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6131BAC6740004080F8 /* FABidCellView.m */; settings = {ASSET_TAGS = (); }; };
+		16AB17621BAD4D9800FAF1E3 /* FAMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AB17611BAD4D9800FAF1E3 /* FAMenuCell.m */; settings = {ASSET_TAGS = (); }; };
 		16E26DCA1BA9C57300C98CF6 /* FAMakebidVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E26DC81BA9C57300C98CF6 /* FAMakebidVC.m */; };
 		16E26DCB1BA9C57300C98CF6 /* FAMakebidVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E26DC91BA9C57300C98CF6 /* FAMakebidVC.xib */; };
 		16E26DD01BA9C58F00C98CF6 /* FAMoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E26DCE1BA9C58F00C98CF6 /* FAMoreVC.m */; };
@@ -30,7 +32,6 @@
 		16E3169E1BA9636200147550 /* FAHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E3169C1BA9636200147550 /* FAHomeVC.m */; };
 		16E3169F1BA9636200147550 /* FAHomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E3169D1BA9636200147550 /* FAHomeVC.xib */; };
 		16E316A41BA9641700147550 /* FABidCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E316A21BA9641700147550 /* FABidCell.m */; };
-		16E316A51BA9641700147550 /* FABidCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E316A31BA9641700147550 /* FABidCell.xib */; };
 		16E316A91BA9669C00147550 /* FABidDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E316A71BA9669C00147550 /* FABidDetailVC.m */; };
 		16E316AA1BA9669C00147550 /* FABidDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16E316A81BA9669C00147550 /* FABidDetailVC.xib */; };
 		16E316AD1BA966E100147550 /* FABidModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E316AC1BA966E100147550 /* FABidModel.m */; };
@@ -77,7 +78,6 @@
 		16ED20761BA8027100A1250A /* FahuidaiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ED20751BA8027100A1250A /* FahuidaiTests.m */; };
 		16F7B8F31BA8505000B7026C /* FAGetBackPwVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F7B8F11BA8505000B7026C /* FAGetBackPwVC.m */; };
 		16F7B8F41BA8505000B7026C /* FAGetBackPwVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16F7B8F21BA8505000B7026C /* FAGetBackPwVC.xib */; };
-		16F7B8F61BA8544E00B7026C /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F7B8F51BA8544E00B7026C /* back@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +95,8 @@
 		068137E51BAA71FE00DE999F /* MMMEventEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMEventEnum.h; sourceTree = "<group>"; };
 		068137E61BAA84D000DE999F /* MMMBankSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MMMBankSDK.bundle; sourceTree = "<group>"; };
 		068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMoreSDK_1.2.2.a; sourceTree = "<group>"; };
+		1655E3181BAEEC9D006B638B /* FATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATextField.h; sourceTree = "<group>"; };
+		1655E3191BAEEC9D006B638B /* FATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATextField.m; sourceTree = "<group>"; };
 		1690D5F81BAC0FBE004080F8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		1690D5FC1BAC647B004080F8 /* SDBallProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBallProgressView.h; sourceTree = "<group>"; };
@@ -114,6 +116,8 @@
 		1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTransparentPieProgressView.m; sourceTree = "<group>"; };
 		1690D6121BAC6740004080F8 /* FABidCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FABidCellView.h; sourceTree = "<group>"; };
 		1690D6131BAC6740004080F8 /* FABidCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FABidCellView.m; sourceTree = "<group>"; };
+		16AB17601BAD4D9800FAF1E3 /* FAMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAMenuCell.h; sourceTree = "<group>"; };
+		16AB17611BAD4D9800FAF1E3 /* FAMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAMenuCell.m; sourceTree = "<group>"; };
 		16E26DC71BA9C57300C98CF6 /* FAMakebidVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAMakebidVC.h; sourceTree = "<group>"; };
 		16E26DC81BA9C57300C98CF6 /* FAMakebidVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAMakebidVC.m; sourceTree = "<group>"; };
 		16E26DC91BA9C57300C98CF6 /* FAMakebidVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAMakebidVC.xib; sourceTree = "<group>"; };
@@ -135,7 +139,6 @@
 		16E3169D1BA9636200147550 /* FAHomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAHomeVC.xib; sourceTree = "<group>"; };
 		16E316A11BA9641700147550 /* FABidCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FABidCell.h; sourceTree = "<group>"; };
 		16E316A21BA9641700147550 /* FABidCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FABidCell.m; sourceTree = "<group>"; };
-		16E316A31BA9641700147550 /* FABidCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FABidCell.xib; sourceTree = "<group>"; };
 		16E316A61BA9669C00147550 /* FABidDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FABidDetailVC.h; sourceTree = "<group>"; };
 		16E316A71BA9669C00147550 /* FABidDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FABidDetailVC.m; sourceTree = "<group>"; };
 		16E316A81BA9669C00147550 /* FABidDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FABidDetailVC.xib; sourceTree = "<group>"; };
@@ -222,7 +225,6 @@
 		16F7B8F01BA8505000B7026C /* FAGetBackPwVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAGetBackPwVC.h; sourceTree = "<group>"; };
 		16F7B8F11BA8505000B7026C /* FAGetBackPwVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAGetBackPwVC.m; sourceTree = "<group>"; };
 		16F7B8F21BA8505000B7026C /* FAGetBackPwVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FAGetBackPwVC.xib; sourceTree = "<group>"; };
-		16F7B8F51BA8544E00B7026C /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,8 @@
 				16E316A61BA9669C00147550 /* FABidDetailVC.h */,
 				16E316A71BA9669C00147550 /* FABidDetailVC.m */,
 				16E316A81BA9669C00147550 /* FABidDetailVC.xib */,
+				16AB17601BAD4D9800FAF1E3 /* FAMenuCell.h */,
+				16AB17611BAD4D9800FAF1E3 /* FAMenuCell.m */,
 			);
 			name = home;
 			sourceTree = "<group>";
@@ -344,6 +348,8 @@
 				16E47D191BA8254100FAFDF3 /* FALoginVC.h */,
 				16E47D1A1BA8254100FAFDF3 /* FALoginVC.m */,
 				16E47D1B1BA8254100FAFDF3 /* FALoginVC.xib */,
+				1655E3181BAEEC9D006B638B /* FATextField.h */,
+				1655E3191BAEEC9D006B638B /* FATextField.m */,
 			);
 			name = login;
 			sourceTree = "<group>";
@@ -362,7 +368,6 @@
 			children = (
 				16E316A11BA9641700147550 /* FABidCell.h */,
 				16E316A21BA9641700147550 /* FABidCell.m */,
-				16E316A31BA9641700147550 /* FABidCell.xib */,
 				1690D6121BAC6740004080F8 /* FABidCellView.h */,
 				1690D6131BAC6740004080F8 /* FABidCellView.m */,
 			);
@@ -578,7 +583,6 @@
 				16E29D3E1BAA972500F6F047 /* view */,
 				068137E21BAA71FE00DE999F /* include */,
 				16E316911BA95C5E00147550 /* utils */,
-				16F7B8F51BA8544E00B7026C /* back@3x.png */,
 				16E47D2C1BA82DB400FAFDF3 /* category */,
 				16E47D2B1BA82D9000FAFDF3 /* model */,
 				16E47D181BA8188600FAFDF3 /* VC */,
@@ -706,7 +710,6 @@
 				16E47D061BA812AD00FAFDF3 /* FAMenuVC.xib in Resources */,
 				16E316B31BA9684800147550 /* FAUserDetailVC.xib in Resources */,
 				16E47D1D1BA8254100FAFDF3 /* FALoginVC.xib in Resources */,
-				16E316A51BA9641700147550 /* FABidCell.xib in Resources */,
 				16F7B8F41BA8505000B7026C /* FAGetBackPwVC.xib in Resources */,
 				16E26DCB1BA9C57300C98CF6 /* FAMakebidVC.xib in Resources */,
 				16E47D2A1BA82BCC00FAFDF3 /* FARegisterVC.xib in Resources */,
@@ -716,7 +719,6 @@
 				16E3169F1BA9636200147550 /* FAHomeVC.xib in Resources */,
 				16ED206A1BA8027100A1250A /* LaunchScreen.xib in Resources */,
 				16ED20671BA8027100A1250A /* Images.xcassets in Resources */,
-				16F7B8F61BA8544E00B7026C /* back@3x.png in Resources */,
 				068137E71BAA84D000DE999F /* MMMBankSDK.bundle in Resources */,
 				16E26DD11BA9C58F00C98CF6 /* FAMoreVC.xib in Resources */,
 			);
@@ -742,6 +744,7 @@
 				16E3169A1BA9631300147550 /* FABaseVC.m in Sources */,
 				16E316EF1BA97C0B00147550 /* MJRefreshAutoStateFooter.m in Sources */,
 				16E47D151BA817EA00FAFDF3 /* WMNavigationInteractiveTransition.m in Sources */,
+				1655E31A1BAEEC9D006B638B /* FATextField.m in Sources */,
 				16E47D0C1BA8140000FAFDF3 /* ViewController.m in Sources */,
 				16E316F11BA97C0B00147550 /* MJRefreshBackNormalFooter.m in Sources */,
 				16E47D091BA813D300FAFDF3 /* WMCommon.m in Sources */,
@@ -753,6 +756,7 @@
 				16E26DCA1BA9C57300C98CF6 /* FAMakebidVC.m in Sources */,
 				16E3169E1BA9636200147550 /* FAHomeVC.m in Sources */,
 				16E316F01BA97C0B00147550 /* MJRefreshBackGifFooter.m in Sources */,
+				16AB17621BAD4D9800FAF1E3 /* FAMenuCell.m in Sources */,
 				1690D60D1BAC647B004080F8 /* SDLoopProgressView.m in Sources */,
 				16E47D1C1BA8254100FAFDF3 /* FALoginVC.m in Sources */,
 				16E316F51BA97C0B00147550 /* MJRefreshStateHeader.m in Sources */,

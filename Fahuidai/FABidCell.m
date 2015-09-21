@@ -27,6 +27,7 @@
     if (!cell) {
         cell = [[FABidCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:bidCell];
         [cell.contentView addSubview:[[FABidCellView alloc]init]];
+        
     }
     
     return cell;

@@ -29,7 +29,7 @@
 
 - (void)configSubViews {
 
-    self.frame = CGRectMake(0, 0, ScreenSize.width-5,100 );
+    self.frame = CGRectMake(5, 0, ScreenSize.width- 10,100 );
     
     self.backgroundColor = [UIColor grayColor];
 }

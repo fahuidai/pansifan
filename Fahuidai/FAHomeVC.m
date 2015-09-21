@@ -29,6 +29,7 @@
     self.tableView.footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction: @selector(loadMoreData)];
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     
+    
 }
 
 - (void)didReceiveMemoryWarning {
