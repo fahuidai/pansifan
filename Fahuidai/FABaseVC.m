@@ -16,16 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
-    view.backgroundColor = [UIColor redColor];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:view];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 28, 28)];
+    [btn setBackgroundImage:[UIImage imageNamed:@"侧拉按钮"] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(showMenu) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];
+    
+    UILabel *titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 60, 40)];
+    [titleLabel setFont:[UIFont systemFontOfSize:20]];
+    [titleLabel setTextAlignment:NSTextAlignmentCenter];
+    [titleLabel setTextColor:[UIColor whiteColor]];
+    self.titleLabel = titleLabel;
+    self.navigationItem.titleView = titleLabel;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)showMenu{
 
+    id root = [UIApplication sharedApplication].keyWindow.rootViewController;
+    [root showMenu];
+}
 /*
 #pragma mark - Navigation
 

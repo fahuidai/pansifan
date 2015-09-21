@@ -15,5 +15,7 @@
 #define isLogin [AccountUtil checkForLogin]
 #define havePicPw [AccountUtil checkForPicPw]
 
+#define BaseColor [UIColor colorWithRed:0.f green:140.f/255 blue:214.f/255 alpha:1]//基础色
+#define BackGroundColor [UIColor lightGrayColor] //背景色
 #import "MBProgressHUD.h"
 #endif

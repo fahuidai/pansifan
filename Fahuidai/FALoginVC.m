@@ -19,13 +19,17 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @property (assign,nonatomic) BOOL flage;
 @property (assign,nonatomic) CGFloat y;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *seg;
+
 @end
 
 @implementation FALoginVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.flage = NO;
+    self.titleLabel.text = @"用户登录";
+    
     // Do any additional setup after loading the view from its nib.
     UIImageView *userImage = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"login_user"]];
     //userImage.frame = CGRectMake(0, 0, 35, 35);
@@ -41,7 +45,7 @@
     self.passWordField.delegate = self;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardShow:) name:UIKeyboardDidShowNotification object:nil];
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardHide:) name:UIKeyboardDidHideNotification object:nil];
 }
 
 - (void)dealloc{
@@ -113,18 +117,17 @@
     CGFloat maxY = ScreenSize.height - kbSize.height;
     
     CGFloat textFieldMaxY = CGRectGetMaxY(self.passWordField.frame);
-    if (!self.y) {
-        self.y = textFieldMaxY - maxY;
+    
+    CGFloat y = textFieldMaxY - maxY;
+    
+    if (y>0) {
+        self.scrollView.contentSize = CGSizeMake(ScreenSize.width, ScreenSize.height +y);
+        [self.scrollView scrollRectToVisible:self.passWordField.frame animated:NO];
     }
     
-    if (!self.flage) {
-        if (self.y>0) {
-            for (UIView *view in self.view.subviews) {
-                [view moveInY:self.y];
-            }
-        }
-        self.flage = YES;
-    }
+}
+- (void)keyboardHide:(NSNotification *)note {
+    self.scrollView.contentSize = CGSizeMake(ScreenSize.width, ScreenSize.height - 44);
 }
 
 @end

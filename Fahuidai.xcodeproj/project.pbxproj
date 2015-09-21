@@ -10,14 +10,11 @@
 		068137E71BAA84D000DE999F /* MMMBankSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 068137E61BAA84D000DE999F /* MMMBankSDK.bundle */; };
 		068137E91BAA84D800DE999F /* libMoreSDK_1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		1655E31A1BAEEC9D006B638B /* FATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655E3191BAEEC9D006B638B /* FATextField.m */; settings = {ASSET_TAGS = (); }; };
+		166314221BAFD56F002FDD3D /* FAIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 166314211BAFD56F002FDD3D /* FAIcon.m */; settings = {ASSET_TAGS = (); }; };
+		166314251BAFDC06002FDD3D /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166314241BAFDC06002FDD3D /* FAImageView.m */; settings = {ASSET_TAGS = (); }; };
+		166314281BAFEE2B002FDD3D /* FAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166314271BAFEE2B002FDD3D /* FAProgressView.m */; settings = {ASSET_TAGS = (); }; };
+		1663146D1BB01075002FDD3D /* FABaseBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663146C1BB01075002FDD3D /* FABaseBackVC.m */; settings = {ASSET_TAGS = (); }; };
 		1690D5FA1BAC0FBE004080F8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
-		1690D60B1BAC647B004080F8 /* SDBallProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5FD1BAC647B004080F8 /* SDBallProgressView.m */; settings = {ASSET_TAGS = (); }; };
-		1690D60C1BAC647B004080F8 /* SDBaseProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5FF1BAC647B004080F8 /* SDBaseProgressView.m */; settings = {ASSET_TAGS = (); }; };
-		1690D60D1BAC647B004080F8 /* SDLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6011BAC647B004080F8 /* SDLoopProgressView.m */; settings = {ASSET_TAGS = (); }; };
-		1690D60E1BAC647B004080F8 /* SDPieLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6031BAC647B004080F8 /* SDPieLoopProgressView.m */; settings = {ASSET_TAGS = (); }; };
-		1690D60F1BAC647B004080F8 /* SDPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6051BAC647B004080F8 /* SDPieProgressView.m */; settings = {ASSET_TAGS = (); }; };
-		1690D6101BAC647B004080F8 /* SDRotationLoopProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6081BAC647B004080F8 /* SDRotationLoopProgressView.m */; settings = {ASSET_TAGS = (); }; };
-		1690D6111BAC647B004080F8 /* SDTransparentPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */; settings = {ASSET_TAGS = (); }; };
 		1690D6141BAC6740004080F8 /* FABidCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6131BAC6740004080F8 /* FABidCellView.m */; settings = {ASSET_TAGS = (); }; };
 		16AB17621BAD4D9800FAF1E3 /* FAMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16AB17611BAD4D9800FAF1E3 /* FAMenuCell.m */; settings = {ASSET_TAGS = (); }; };
 		16E26DCA1BA9C57300C98CF6 /* FAMakebidVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 16E26DC81BA9C57300C98CF6 /* FAMakebidVC.m */; };
@@ -97,23 +94,16 @@
 		068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMoreSDK_1.2.2.a; sourceTree = "<group>"; };
 		1655E3181BAEEC9D006B638B /* FATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATextField.h; sourceTree = "<group>"; };
 		1655E3191BAEEC9D006B638B /* FATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATextField.m; sourceTree = "<group>"; };
+		166314201BAFD56F002FDD3D /* FAIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAIcon.h; sourceTree = "<group>"; };
+		166314211BAFD56F002FDD3D /* FAIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAIcon.m; sourceTree = "<group>"; };
+		166314231BAFDC06002FDD3D /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		166314241BAFDC06002FDD3D /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		166314261BAFEE2B002FDD3D /* FAProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAProgressView.h; sourceTree = "<group>"; };
+		166314271BAFEE2B002FDD3D /* FAProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAProgressView.m; sourceTree = "<group>"; };
+		1663146B1BB01075002FDD3D /* FABaseBackVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FABaseBackVC.h; sourceTree = "<group>"; };
+		1663146C1BB01075002FDD3D /* FABaseBackVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FABaseBackVC.m; sourceTree = "<group>"; };
 		1690D5F81BAC0FBE004080F8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		1690D5FC1BAC647B004080F8 /* SDBallProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBallProgressView.h; sourceTree = "<group>"; };
-		1690D5FD1BAC647B004080F8 /* SDBallProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBallProgressView.m; sourceTree = "<group>"; };
-		1690D5FE1BAC647B004080F8 /* SDBaseProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBaseProgressView.h; sourceTree = "<group>"; };
-		1690D5FF1BAC647B004080F8 /* SDBaseProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBaseProgressView.m; sourceTree = "<group>"; };
-		1690D6001BAC647B004080F8 /* SDLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLoopProgressView.h; sourceTree = "<group>"; };
-		1690D6011BAC647B004080F8 /* SDLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLoopProgressView.m; sourceTree = "<group>"; };
-		1690D6021BAC647B004080F8 /* SDPieLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPieLoopProgressView.h; sourceTree = "<group>"; };
-		1690D6031BAC647B004080F8 /* SDPieLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPieLoopProgressView.m; sourceTree = "<group>"; };
-		1690D6041BAC647B004080F8 /* SDPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPieProgressView.h; sourceTree = "<group>"; };
-		1690D6051BAC647B004080F8 /* SDPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPieProgressView.m; sourceTree = "<group>"; };
-		1690D6061BAC647B004080F8 /* SDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDProgressView.h; sourceTree = "<group>"; };
-		1690D6071BAC647B004080F8 /* SDRotationLoopProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRotationLoopProgressView.h; sourceTree = "<group>"; };
-		1690D6081BAC647B004080F8 /* SDRotationLoopProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRotationLoopProgressView.m; sourceTree = "<group>"; };
-		1690D6091BAC647B004080F8 /* SDTransparentPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTransparentPieProgressView.h; sourceTree = "<group>"; };
-		1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTransparentPieProgressView.m; sourceTree = "<group>"; };
 		1690D6121BAC6740004080F8 /* FABidCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FABidCellView.h; sourceTree = "<group>"; };
 		1690D6131BAC6740004080F8 /* FABidCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FABidCellView.m; sourceTree = "<group>"; };
 		16AB17601BAD4D9800FAF1E3 /* FAMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAMenuCell.h; sourceTree = "<group>"; };
@@ -272,28 +262,6 @@
 			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		1690D5FB1BAC6435004080F8 /* SDProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				1690D5FC1BAC647B004080F8 /* SDBallProgressView.h */,
-				1690D5FD1BAC647B004080F8 /* SDBallProgressView.m */,
-				1690D5FE1BAC647B004080F8 /* SDBaseProgressView.h */,
-				1690D5FF1BAC647B004080F8 /* SDBaseProgressView.m */,
-				1690D6001BAC647B004080F8 /* SDLoopProgressView.h */,
-				1690D6011BAC647B004080F8 /* SDLoopProgressView.m */,
-				1690D6021BAC647B004080F8 /* SDPieLoopProgressView.h */,
-				1690D6031BAC647B004080F8 /* SDPieLoopProgressView.m */,
-				1690D6041BAC647B004080F8 /* SDPieProgressView.h */,
-				1690D6051BAC647B004080F8 /* SDPieProgressView.m */,
-				1690D6061BAC647B004080F8 /* SDProgressView.h */,
-				1690D6071BAC647B004080F8 /* SDRotationLoopProgressView.h */,
-				1690D6081BAC647B004080F8 /* SDRotationLoopProgressView.m */,
-				1690D6091BAC647B004080F8 /* SDTransparentPieProgressView.h */,
-				1690D60A1BAC647B004080F8 /* SDTransparentPieProgressView.m */,
-			);
-			name = SDProgressView;
-			sourceTree = "<group>";
-		};
 		16E26DC61BA9C52700C98CF6 /* makebid */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +306,10 @@
 				16E316A81BA9669C00147550 /* FABidDetailVC.xib */,
 				16AB17601BAD4D9800FAF1E3 /* FAMenuCell.h */,
 				16AB17611BAD4D9800FAF1E3 /* FAMenuCell.m */,
+				166314201BAFD56F002FDD3D /* FAIcon.h */,
+				166314211BAFD56F002FDD3D /* FAIcon.m */,
+				166314231BAFDC06002FDD3D /* FAImageView.h */,
+				166314241BAFDC06002FDD3D /* FAImageView.m */,
 			);
 			name = home;
 			sourceTree = "<group>";
@@ -370,6 +342,8 @@
 				16E316A21BA9641700147550 /* FABidCell.m */,
 				1690D6121BAC6740004080F8 /* FABidCellView.h */,
 				1690D6131BAC6740004080F8 /* FABidCellView.m */,
+				166314261BAFEE2B002FDD3D /* FAProgressView.h */,
+				166314271BAFEE2B002FDD3D /* FAProgressView.m */,
 			);
 			name = bidCell;
 			sourceTree = "<group>";
@@ -482,7 +456,6 @@
 		16E47D161BA8183200FAFDF3 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				1690D5FB1BAC6435004080F8 /* SDProgressView */,
 				1690D5F71BAC0F95004080F8 /* MBProgressHUD */,
 				16E316BB1BA97C0B00147550 /* MJRefresh */,
 				16E47D171BA8183F00FAFDF3 /* WMMenu */,
@@ -516,6 +489,8 @@
 				16E47D1E1BA828CF00FAFDF3 /* register */,
 				16E316981BA9631300147550 /* FABaseVC.h */,
 				16E316991BA9631300147550 /* FABaseVC.m */,
+				1663146B1BB01075002FDD3D /* FABaseBackVC.h */,
+				1663146C1BB01075002FDD3D /* FABaseBackVC.m */,
 			);
 			name = VC;
 			sourceTree = "<group>";
@@ -738,9 +713,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1690D6111BAC647B004080F8 /* SDTransparentPieProgressView.m in Sources */,
+				166314251BAFDC06002FDD3D /* FAImageView.m in Sources */,
 				16E316F31BA97C0B00147550 /* MJRefreshGifHeader.m in Sources */,
 				16E316971BA95D0C00147550 /* User.m in Sources */,
+				166314221BAFD56F002FDD3D /* FAIcon.m in Sources */,
 				16E3169A1BA9631300147550 /* FABaseVC.m in Sources */,
 				16E316EF1BA97C0B00147550 /* MJRefreshAutoStateFooter.m in Sources */,
 				16E47D151BA817EA00FAFDF3 /* WMNavigationInteractiveTransition.m in Sources */,
@@ -757,10 +733,8 @@
 				16E3169E1BA9636200147550 /* FAHomeVC.m in Sources */,
 				16E316F01BA97C0B00147550 /* MJRefreshBackGifFooter.m in Sources */,
 				16AB17621BAD4D9800FAF1E3 /* FAMenuCell.m in Sources */,
-				1690D60D1BAC647B004080F8 /* SDLoopProgressView.m in Sources */,
 				16E47D1C1BA8254100FAFDF3 /* FALoginVC.m in Sources */,
 				16E316F51BA97C0B00147550 /* MJRefreshStateHeader.m in Sources */,
-				1690D60F1BAC647B004080F8 /* SDPieProgressView.m in Sources */,
 				1690D6141BAC6740004080F8 /* FABidCellView.m in Sources */,
 				16E316B61BA96A7500147550 /* FAAssetView.m in Sources */,
 				16E47D291BA82BCC00FAFDF3 /* FARegisterVC.m in Sources */,
@@ -768,17 +742,16 @@
 				16E316EA1BA97C0B00147550 /* MJRefreshComponent.m in Sources */,
 				1690D5FA1BAC0FBE004080F8 /* MBProgressHUD.m in Sources */,
 				16E316EC1BA97C0B00147550 /* MJRefreshHeader.m in Sources */,
+				1663146D1BB01075002FDD3D /* FABaseBackVC.m in Sources */,
 				16E316AD1BA966E100147550 /* FABidModel.m in Sources */,
-				1690D60C1BAC647B004080F8 /* SDBaseProgressView.m in Sources */,
 				16E316ED1BA97C0B00147550 /* MJRefreshAutoGifFooter.m in Sources */,
+				166314281BAFEE2B002FDD3D /* FAProgressView.m in Sources */,
 				16ED205F1BA8027100A1250A /* AppDelegate.m in Sources */,
 				16E47D251BA82B4F00FAFDF3 /* FAAccountBaseVC.m in Sources */,
 				16F7B8F31BA8505000B7026C /* FAGetBackPwVC.m in Sources */,
 				16E316941BA95C9D00147550 /* AccountUtil.m in Sources */,
 				16E316F21BA97C0B00147550 /* MJRefreshBackStateFooter.m in Sources */,
-				1690D60B1BAC647B004080F8 /* SDBallProgressView.m in Sources */,
 				16E29D3D1BAA96F300F6F047 /* IMPassWordView.m in Sources */,
-				1690D60E1BAC647B004080F8 /* SDPieLoopProgressView.m in Sources */,
 				16E316EE1BA97C0B00147550 /* MJRefreshAutoNormalFooter.m in Sources */,
 				16E47D141BA817EA00FAFDF3 /* WMPopAnimation.m in Sources */,
 				16E316B21BA9684800147550 /* FAUserDetailVC.m in Sources */,
@@ -786,7 +759,6 @@
 				16E316E81BA97C0B00147550 /* MJRefreshAutoFooter.m in Sources */,
 				16E316F71BA97C0B00147550 /* MJRefreshConst.m in Sources */,
 				16E316EB1BA97C0B00147550 /* MJRefreshFooter.m in Sources */,
-				1690D6101BAC647B004080F8 /* SDRotationLoopProgressView.m in Sources */,
 				16E26DD01BA9C58F00C98CF6 /* FAMoreVC.m in Sources */,
 				16E47D2F1BA82ED300FAFDF3 /* UIView+Animation.m in Sources */,
 				16E316F41BA97C0B00147550 /* MJRefreshNormalHeader.m in Sources */,

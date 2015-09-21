@@ -31,6 +31,9 @@
     
     _navT = [[WMNavigationInteractiveTransition alloc] initWithViewController:self];
     [popRecognizer addTarget:_navT action:@selector(handleControllerPop:)];
+    
+    [self.navigationBar setBarTintColor:BaseColor];
+    
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {

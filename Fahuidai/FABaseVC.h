@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FABaseVC : UIViewController
-
+@property (weak ,nonatomic) UILabel *titleLabel;
 @end

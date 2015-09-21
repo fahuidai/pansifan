@@ -16,22 +16,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.titleLabel.text = @"投标";
     // Do any additional setup after loading the view from its nib.
+    UIButton *btnShare = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 30)];
+    [btnShare setTitle:@"分享" forState:UIControlStateNormal];
+    [btnShare addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btnShare];
+    
+    
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)share{
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
-
 @end

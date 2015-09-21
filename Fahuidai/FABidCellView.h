@@ -11,6 +11,7 @@
 @interface FABidCellView : UIView
 
 @property (strong,nonatomic) FABidModel *bid;
-
-
+@property (weak,nonatomic) UILabel *moneyLabel;
+@property (weak,nonatomic) UILabel *endTimeLabel;
+@property (weak,nonatomic) UILabel *percentLabel;
 @end

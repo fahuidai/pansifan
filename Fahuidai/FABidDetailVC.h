@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 fahuidai. All rights reserved.
 //
 
-#import "FABaseVC.h"
+#import "FABaseBackVC.h"
 #import "FABidModel.h"
-@interface FABidDetailVC : FABaseVC
+@interface FABidDetailVC : FABaseBackVC
 
 @property (strong,nonatomic) FABidModel *bid;
 @end

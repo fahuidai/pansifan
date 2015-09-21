@@ -26,7 +26,12 @@
     FABidCell *cell = [tableView dequeueReusableCellWithIdentifier:bidCell];
     if (!cell) {
         cell = [[FABidCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:bidCell];
-        [cell.contentView addSubview:[[FABidCellView alloc]init]];
+        cell.selectionStyle = UITableViewCellEditingStyleNone;
+        cell.backgroundColor = [UIColor clearColor];
+        FABidCellView *cellView = [[FABidCellView alloc]init];
+        //cellView.layer.cornerRadius = 5;
+        [cell.contentView addSubview:cellView];
+        
         
     }
     

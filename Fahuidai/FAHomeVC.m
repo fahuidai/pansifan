@@ -19,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"首页";
+    
+    self.titleLabel.text = @"首页";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshData)];
@@ -29,9 +30,13 @@
     self.tableView.footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction: @selector(loadMoreData)];
     self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
     
+    //self.tableView.backgroundView.backgroundColor = [UIColor lightGrayColor];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    //配置数据
     
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -60,7 +65,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    return 110;
+    return 125;
 }
 - (void) refreshData{
     NSLog(@"刷新");

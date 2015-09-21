@@ -10,4 +10,5 @@
 #import "UIView+Animation.h"
 @interface FAAccountBaseVC : UIViewController
 
+@property (weak ,nonatomic)UILabel *titleLabel;
 @end
