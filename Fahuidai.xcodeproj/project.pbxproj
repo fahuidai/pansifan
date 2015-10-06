@@ -25,6 +25,7 @@
 		068137E71BAA84D000DE999F /* MMMBankSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 068137E61BAA84D000DE999F /* MMMBankSDK.bundle */; };
 		068137E91BAA84D800DE999F /* libMoreSDK_1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		1655E31A1BAEEC9D006B638B /* FATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655E3191BAEEC9D006B638B /* FATextField.m */; };
+		165834061BC3F14600E99270 /* FAProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 165834051BC3F14600E99270 /* FAProgressLine.m */; settings = {ASSET_TAGS = (); }; };
 		166314221BAFD56F002FDD3D /* FAIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 166314211BAFD56F002FDD3D /* FAIcon.m */; };
 		166314251BAFDC06002FDD3D /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166314241BAFDC06002FDD3D /* FAImageView.m */; };
 		166314281BAFEE2B002FDD3D /* FAProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 166314271BAFEE2B002FDD3D /* FAProgressView.m */; };
@@ -141,6 +142,8 @@
 		068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMoreSDK_1.2.2.a; sourceTree = "<group>"; };
 		1655E3181BAEEC9D006B638B /* FATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATextField.h; sourceTree = "<group>"; };
 		1655E3191BAEEC9D006B638B /* FATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATextField.m; sourceTree = "<group>"; };
+		165834041BC3F14600E99270 /* FAProgressLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAProgressLine.h; sourceTree = "<group>"; };
+		165834051BC3F14600E99270 /* FAProgressLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAProgressLine.m; sourceTree = "<group>"; };
 		166314201BAFD56F002FDD3D /* FAIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAIcon.h; sourceTree = "<group>"; };
 		166314211BAFD56F002FDD3D /* FAIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAIcon.m; sourceTree = "<group>"; };
 		166314231BAFDC06002FDD3D /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
@@ -419,6 +422,8 @@
 				166314211BAFD56F002FDD3D /* FAIcon.m */,
 				166314231BAFDC06002FDD3D /* FAImageView.h */,
 				166314241BAFDC06002FDD3D /* FAImageView.m */,
+				165834041BC3F14600E99270 /* FAProgressLine.h */,
+				165834051BC3F14600E99270 /* FAProgressLine.m */,
 			);
 			name = home;
 			sourceTree = "<group>";
@@ -867,6 +872,7 @@
 				06718C011BBA68B600D17A56 /* AFURLResponseSerialization.m in Sources */,
 				16E316ED1BA97C0B00147550 /* MJRefreshAutoGifFooter.m in Sources */,
 				06718BFF1BBA68B600D17A56 /* AFURLConnectionOperation.m in Sources */,
+				165834061BC3F14600E99270 /* FAProgressLine.m in Sources */,
 				166314281BAFEE2B002FDD3D /* FAProgressView.m in Sources */,
 				16ED205F1BA8027100A1250A /* AppDelegate.m in Sources */,
 				16E47D251BA82B4F00FAFDF3 /* FAAccountBaseVC.m in Sources */,

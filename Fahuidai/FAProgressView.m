@@ -7,7 +7,10 @@
 //
 
 #import "FAProgressView.h"
-
+@interface FAProgressView()
+@property (assign,nonatomic) CGFloat curProgress;
+@property (strong,nonatomic) NSTimer *timer;
+@end
 @implementation FAProgressView
 
 
@@ -22,6 +25,7 @@
         
         self.perLabel = perLabel;
         [self addSubview:perLabel];
+        self.curProgress = 0;
     }
     return self;
 }
@@ -46,7 +50,7 @@
     
     
     if (self.percent) {
-        CGContextAddArc(ctx, rect.size.width/2,rect.size.height/2,28, -M_PI_2,self.percent/100*2*M_PI - M_PI_2, 0);
+        CGContextAddArc(ctx, rect.size.width/2,rect.size.height/2,28, -M_PI_2,self.curProgress/100*2*M_PI - M_PI_2, 0);
         CGContextStrokePath(ctx);
     }
   
@@ -54,10 +58,20 @@
 - (void)setPercent:(CGFloat)percent{
     _percent = percent;
     
-    
-    
     self.perLabel.text = [NSString stringWithFormat:@"%ld%@",(long)[[NSNumber numberWithFloat:percent] integerValue],@"%"];
-    [self setNeedsDisplay];
+    
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(progressAnimation) userInfo:nil repeats:YES];
+    //[self setNeedsDisplay];
 }
-
+- (void)progressAnimation{
+    
+   // NSLog(@"hahahahh");
+    if (self.curProgress >= self.percent) {
+        [self.timer invalidate];
+    }else{
+        self.curProgress +=1;
+        [self setNeedsDisplay];
+    }
+    
+}
 @end

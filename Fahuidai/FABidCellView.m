@@ -33,7 +33,7 @@
 - (void)configSubViews {
 
     self.frame = CGRectMake(5, 0, ScreenSize.width- 10,120 );
-    self.backgroundColor = [UIColor lightGrayColor];
+    self.backgroundColor = BackGroundColor;
     FAImageView *bg = [[FAImageView alloc]initWithFrame:self.bounds];
     bg.image = [UIImage imageNamed:@"圆角矩形-1"];
     [self addSubview:bg];
@@ -95,7 +95,7 @@
     
     FAProgressView *progress = [[FAProgressView alloc]initWithFrame:CGRectMake(self.frame.size.width- 72,45,70,70)];
     [self addSubview:progress];
-    progress.percent = 50.6;//百分比 CGFloat
+    progress.percent = 73;//百分比 CGFloat
     [progress setNeedsDisplay];
 }
 
