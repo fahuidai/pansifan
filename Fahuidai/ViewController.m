@@ -215,10 +215,10 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
         
             [self.messageNav popToRootViewControllerAnimated:NO];
             
-            if ([title isEqualToString:@"makebid"]&&isLogin) {
+            if ([title isEqualToString:@"makebid"]&&hasLogin) {
                 nextVC = [[FAMakebidVC alloc]init];
             }
-            if ([title isEqualToString:@"userdetail"]&&isLogin) {
+            if ([title isEqualToString:@"userdetail"]&&hasLogin) {
                 nextVC = [[FAUserDetailVC alloc]init];
             }
             if ([title isEqualToString:@"more"]) {

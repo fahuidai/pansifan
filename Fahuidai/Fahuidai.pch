@@ -9,11 +9,11 @@
 #ifndef Fahuidai_Fahuidai_pch
 #define Fahuidai_Fahuidai_pch
 
-
+#define APPKey @"5613f1c6e0f55a4b8800145d"
 #define ScreenSize [UIScreen mainScreen].bounds.size
 #define isIphone6 ScreenSize.width>=375
 #define isIphone4 ScreenSize.width == 320
-#define isLogin [AccountUtil checkForLogin]
+#define hasLogin [AccountUtil checkForLogin]
 #define havePicPw [AccountUtil checkForPicPw]
 
 #define BaseColor [UIColor colorWithRed:0.f green:140.f/255 blue:214.f/255 alpha:1]//基础色

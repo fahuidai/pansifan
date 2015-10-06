@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 40)];
-    [backBtn setBackgroundImage:[UIImage imageNamed:@"Back"] forState:UIControlStateNormal];
+    UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20,20)];
+    [backBtn setBackgroundImage:[UIImage imageNamed:@"login_return"] forState:UIControlStateNormal];
     
     [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:backBtn];

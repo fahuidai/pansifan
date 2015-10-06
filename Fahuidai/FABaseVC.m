@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 28, 28)];
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
     [btn setBackgroundImage:[UIImage imageNamed:@"侧拉按钮"] forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(showMenu) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:btn];

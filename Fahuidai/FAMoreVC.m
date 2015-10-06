@@ -51,7 +51,7 @@
         UISwitch *sw = [[UISwitch alloc]init];
         self.sw = sw;
         [sw addTarget:self action:@selector(changePicPw) forControlEvents:UIControlEventValueChanged];
-        if (isLogin && havePicPw) {
+        if (hasLogin && havePicPw) {
             [sw setOn:YES];
         }
         cell.accessoryView = sw;
@@ -93,7 +93,7 @@
     }
     //否则是需要设置手势密码
     else {
-        if (isLogin) {
+        if (hasLogin) {
             IMPassWordView *pwView = [[IMPassWordView alloc]initWithFrame:[UIScreen mainScreen].bounds];
             [[UIApplication sharedApplication].keyWindow addSubviewFromBottom:pwView];
             

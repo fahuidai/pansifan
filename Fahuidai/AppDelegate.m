@@ -10,6 +10,7 @@
 #import "WMCommon.h"
 #import "IMPassWordView.h"
 #import "AccountUtil.h"
+#import "UMSocial.h"
 @interface AppDelegate ()
 
 @end
@@ -20,9 +21,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
+    
     WMCommon *common = [WMCommon getInstance];
     common.screenW = [[UIScreen mainScreen] bounds].size.width;
     common.screenH = [[UIScreen mainScreen] bounds].size.height;
+    
+    [UMSocialData setAppKey:APPKey];
     
     return YES;
 }
@@ -42,7 +46,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    if (isLogin && havePicPw) {
+    if (hasLogin && havePicPw) {
         IMPassWordView *pass = [[IMPassWordView alloc]initWithFrame:[UIScreen mainScreen].bounds];
         [self.window addSubview:pass];
     }

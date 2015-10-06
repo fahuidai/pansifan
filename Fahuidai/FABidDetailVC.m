@@ -8,7 +8,8 @@
 
 #import "FABidDetailVC.h"
 #import "FAProgressLine.h"
-@interface FABidDetailVC ()<UITableViewDataSource,UITableViewDelegate>
+#import "UMSocial.h"
+@interface FABidDetailVC ()<UITableViewDataSource,UITableViewDelegate,UMSocialUIDelegate>
 @property (weak, nonatomic) IBOutlet UIView *line;
 @property (weak, nonatomic) IBOutlet FAProgressLine *progress;
 @property (weak, nonatomic) IBOutlet UILabel *rate;
@@ -83,6 +84,6 @@
     return label;
 }
 - (void)share{
-
+    [UMSocialSnsService presentSnsIconSheetView:self appKey:APPKey shareText:@"分享" shareImage:nil shareToSnsNames:@[UMShareToSina,UMShareToTencent,UMShareToRenren] delegate:self];
 }
 @end
