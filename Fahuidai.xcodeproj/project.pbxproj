@@ -24,6 +24,14 @@
 		06718C171BBA6F0100D17A56 /* UserHttpRequestBaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 06718C161BBA6F0100D17A56 /* UserHttpRequestBaseApi.m */; };
 		068137E71BAA84D000DE999F /* MMMBankSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 068137E61BAA84D000DE999F /* MMMBankSDK.bundle */; };
 		068137E91BAA84D800DE999F /* libMoreSDK_1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		16393E8F1BC6551F0050C9CC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E8E1BC6551F0050C9CC /* libsqlite3.tbd */; };
+		16393E911BC6553F0050C9CC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E901BC6553F0050C9CC /* Security.framework */; };
+		16393E931BC655460050C9CC /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E921BC655460050C9CC /* libiconv.tbd */; };
+		16393E951BC655540050C9CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E941BC655540050C9CC /* SystemConfiguration.framework */; };
+		16393E971BC6555D0050C9CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E961BC6555D0050C9CC /* CoreGraphics.framework */; };
+		16393E991BC655660050C9CC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E981BC655660050C9CC /* CoreTelephony.framework */; };
+		16393E9B1BC655770050C9CC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E9A1BC655770050C9CC /* libstdc++.tbd */; };
+		16393E9D1BC6557F0050C9CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 16393E9C1BC6557F0050C9CC /* libz.tbd */; };
 		1655E31A1BAEEC9D006B638B /* FATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1655E3191BAEEC9D006B638B /* FATextField.m */; };
 		165834061BC3F14600E99270 /* FAProgressLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 165834051BC3F14600E99270 /* FAProgressLine.m */; settings = {ASSET_TAGS = (); }; };
 		166314221BAFD56F002FDD3D /* FAIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 166314211BAFD56F002FDD3D /* FAIcon.m */; };
@@ -32,6 +40,9 @@
 		1663146D1BB01075002FDD3D /* FABaseBackVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1663146C1BB01075002FDD3D /* FABaseBackVC.m */; };
 		1690D5FA1BAC0FBE004080F8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */; };
 		1690D6141BAC6740004080F8 /* FABidCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1690D6131BAC6740004080F8 /* FABidCellView.m */; };
+		1693433F1BC6AAC0001EE0A9 /* FALawerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1693433D1BC6AAC0001EE0A9 /* FALawerVC.m */; settings = {ASSET_TAGS = (); }; };
+		169343401BC6AAC0001EE0A9 /* FALawerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1693433E1BC6AAC0001EE0A9 /* FALawerVC.xib */; settings = {ASSET_TAGS = (); }; };
+		169343461BC6B99A001EE0A9 /* FARegisterTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 169343451BC6B99A001EE0A9 /* FARegisterTextField.m */; settings = {ASSET_TAGS = (); }; };
 		16978A3F1BC427B2003E3773 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16978A191BC427B2003E3773 /* UMSocialLocalizable.strings */; settings = {ASSET_TAGS = (); }; };
 		16978A401BC427B2003E3773 /* libUMSocial_Sdk_4.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16978A271BC427B2003E3773 /* libUMSocial_Sdk_4.2.5.a */; settings = {ASSET_TAGS = (); }; };
 		16978A411BC427B2003E3773 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16978A291BC427B2003E3773 /* UMSCommentDetailController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -154,8 +165,16 @@
 		06718C161BBA6F0100D17A56 /* UserHttpRequestBaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHttpRequestBaseApi.m; sourceTree = "<group>"; };
 		068137E41BAA71FE00DE999F /* ControllerActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerActivity.h; sourceTree = "<group>"; };
 		068137E51BAA71FE00DE999F /* MMMEventEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMEventEnum.h; sourceTree = "<group>"; };
-		068137E61BAA84D000DE999F /* MMMBankSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MMMBankSDK.bundle; sourceTree = "<group>"; };
-		068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMoreSDK_1.2.2.a; sourceTree = "<group>"; };
+		068137E61BAA84D000DE999F /* MMMBankSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MMMBankSDK.bundle; path = ../MMMBankSDK.bundle; sourceTree = "<group>"; };
+		068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMoreSDK_1.2.2.a; path = ../libMoreSDK_1.2.2.a; sourceTree = "<group>"; };
+		16393E8E1BC6551F0050C9CC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		16393E901BC6553F0050C9CC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		16393E921BC655460050C9CC /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		16393E941BC655540050C9CC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		16393E961BC6555D0050C9CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		16393E981BC655660050C9CC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		16393E9A1BC655770050C9CC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		16393E9C1BC6557F0050C9CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		1655E3181BAEEC9D006B638B /* FATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FATextField.h; sourceTree = "<group>"; };
 		1655E3191BAEEC9D006B638B /* FATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FATextField.m; sourceTree = "<group>"; };
 		165834041BC3F14600E99270 /* FAProgressLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAProgressLine.h; sourceTree = "<group>"; };
@@ -172,6 +191,11 @@
 		1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		1690D6121BAC6740004080F8 /* FABidCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FABidCellView.h; sourceTree = "<group>"; };
 		1690D6131BAC6740004080F8 /* FABidCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FABidCellView.m; sourceTree = "<group>"; };
+		1693433C1BC6AAC0001EE0A9 /* FALawerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FALawerVC.h; sourceTree = "<group>"; };
+		1693433D1BC6AAC0001EE0A9 /* FALawerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FALawerVC.m; sourceTree = "<group>"; };
+		1693433E1BC6AAC0001EE0A9 /* FALawerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FALawerVC.xib; sourceTree = "<group>"; };
+		169343441BC6B99A001EE0A9 /* FARegisterTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FARegisterTextField.h; sourceTree = "<group>"; };
+		169343451BC6B99A001EE0A9 /* FARegisterTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FARegisterTextField.m; sourceTree = "<group>"; };
 		16978A1A1BC427B2003E3773 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		16978A1C1BC427B2003E3773 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		16978A1D1BC427B2003E3773 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -320,6 +344,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16393E9D1BC6557F0050C9CC /* libz.tbd in Frameworks */,
+				16393E9B1BC655770050C9CC /* libstdc++.tbd in Frameworks */,
+				16393E991BC655660050C9CC /* CoreTelephony.framework in Frameworks */,
+				16393E971BC6555D0050C9CC /* CoreGraphics.framework in Frameworks */,
+				16393E951BC655540050C9CC /* SystemConfiguration.framework in Frameworks */,
+				16393E931BC655460050C9CC /* libiconv.tbd in Frameworks */,
+				16393E911BC6553F0050C9CC /* Security.framework in Frameworks */,
+				16393E8F1BC6551F0050C9CC /* libsqlite3.tbd in Frameworks */,
 				16978A4A1BC427B2003E3773 /* libSocialQQ.a in Frameworks */,
 				16978A4D1BC427B2003E3773 /* libSocialWechat.a in Frameworks */,
 				16978A4E1BC427B2003E3773 /* libWeChatSDK.a in Frameworks */,
@@ -425,6 +457,16 @@
 				1690D5F91BAC0FBE004080F8 /* MBProgressHUD.m */,
 			);
 			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		1693433B1BC6AA93001EE0A9 /* lawer */ = {
+			isa = PBXGroup;
+			children = (
+				1693433C1BC6AAC0001EE0A9 /* FALawerVC.h */,
+				1693433D1BC6AAC0001EE0A9 /* FALawerVC.m */,
+				1693433E1BC6AAC0001EE0A9 /* FALawerVC.xib */,
+			);
+			name = lawer;
 			sourceTree = "<group>";
 		};
 		16978A171BC427B2003E3773 /* umeng_ios_social_sdk_4.2.5_arm64_custom */ = {
@@ -709,6 +751,16 @@
 		16E47D161BA8183200FAFDF3 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				16393E9C1BC6557F0050C9CC /* libz.tbd */,
+				16393E9A1BC655770050C9CC /* libstdc++.tbd */,
+				16393E981BC655660050C9CC /* CoreTelephony.framework */,
+				16393E961BC6555D0050C9CC /* CoreGraphics.framework */,
+				16393E941BC655540050C9CC /* SystemConfiguration.framework */,
+				16393E921BC655460050C9CC /* libiconv.tbd */,
+				16393E8E1BC6551F0050C9CC /* libsqlite3.tbd */,
+				068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */,
+				068137E61BAA84D000DE999F /* MMMBankSDK.bundle */,
+				16393E901BC6553F0050C9CC /* Security.framework */,
 				16978A171BC427B2003E3773 /* umeng_ios_social_sdk_4.2.5_arm64_custom */,
 				1690D5F71BAC0F95004080F8 /* MBProgressHUD */,
 				16E316BB1BA97C0B00147550 /* MJRefresh */,
@@ -735,6 +787,7 @@
 		16E47D181BA8188600FAFDF3 /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				1693433B1BC6AA93001EE0A9 /* lawer */,
 				16E26DCC1BA9C57800C98CF6 /* more */,
 				16E26DC61BA9C52700C98CF6 /* makebid */,
 				16E316AE1BA9682400147550 /* user */,
@@ -760,6 +813,8 @@
 				16F7B8F01BA8505000B7026C /* FAGetBackPwVC.h */,
 				16F7B8F11BA8505000B7026C /* FAGetBackPwVC.m */,
 				16F7B8F21BA8505000B7026C /* FAGetBackPwVC.xib */,
+				169343441BC6B99A001EE0A9 /* FARegisterTextField.h */,
+				169343451BC6B99A001EE0A9 /* FARegisterTextField.m */,
 			);
 			name = register;
 			sourceTree = "<group>";
@@ -789,8 +844,6 @@
 		16ED204D1BA8027100A1250A = {
 			isa = PBXGroup;
 			children = (
-				068137E81BAA84D800DE999F /* libMoreSDK_1.2.2.a */,
-				068137E61BAA84D000DE999F /* MMMBankSDK.bundle */,
 				16ED20581BA8027100A1250A /* Fahuidai */,
 				16ED20721BA8027100A1250A /* FahuidaiTests */,
 				16ED20571BA8027100A1250A /* Products */,
@@ -944,6 +997,7 @@
 				16E316B31BA9684800147550 /* FAUserDetailVC.xib in Resources */,
 				16978A3F1BC427B2003E3773 /* UMSocialLocalizable.strings in Resources */,
 				16E47D1D1BA8254100FAFDF3 /* FALoginVC.xib in Resources */,
+				169343401BC6AAC0001EE0A9 /* FALawerVC.xib in Resources */,
 				16978A461BC427B2003E3773 /* UMSLoginViewController.xib in Resources */,
 				16978A481BC427B2003E3773 /* UMSShareListController.xib in Resources */,
 				16F7B8F41BA8505000B7026C /* FAGetBackPwVC.xib in Resources */,
@@ -982,6 +1036,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				166314251BAFDC06002FDD3D /* FAImageView.m in Sources */,
+				169343461BC6B99A001EE0A9 /* FARegisterTextField.m in Sources */,
 				16E316F31BA97C0B00147550 /* MJRefreshGifHeader.m in Sources */,
 				16E316971BA95D0C00147550 /* User.m in Sources */,
 				166314221BAFD56F002FDD3D /* FAIcon.m in Sources */,
@@ -1003,6 +1058,7 @@
 				16E26DCA1BA9C57300C98CF6 /* FAMakebidVC.m in Sources */,
 				06718C141BBA6A7500D17A56 /* RMMapper.m in Sources */,
 				16E3169E1BA9636200147550 /* FAHomeVC.m in Sources */,
+				1693433F1BC6AAC0001EE0A9 /* FALawerVC.m in Sources */,
 				16E316F01BA97C0B00147550 /* MJRefreshBackGifFooter.m in Sources */,
 				06718C111BBA6A7500D17A56 /* NSObject+RMArchivable.m in Sources */,
 				16AB17621BAD4D9800FAF1E3 /* FAMenuCell.m in Sources */,
@@ -1119,6 +1175,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1165,6 +1222,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1191,6 +1249,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fahuidai/umeng_ios_social_sdk_4.2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -1222,6 +1281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Fahuidai/umeng_ios_social_sdk_4.2.5_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",

@@ -45,6 +45,10 @@
             title = @"更       多";
             image = [UIImage imageNamed:@"leftmore"];
             break;
+        case MenuCellTypeLawer:
+            title = @"我是律师";
+            image = [UIImage imageNamed:@"leftmore"];
+            break;
         default:
             break;
     }

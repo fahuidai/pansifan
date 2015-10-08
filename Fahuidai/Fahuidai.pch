@@ -9,12 +9,27 @@
 #ifndef Fahuidai_Fahuidai_pch
 #define Fahuidai_Fahuidai_pch
 
-#define APPKey @"5613f1c6e0f55a4b8800145d"
+//屏幕尺寸
 #define ScreenSize [UIScreen mainScreen].bounds.size
 #define isIphone6 ScreenSize.width>=375
 #define isIphone4 ScreenSize.width == 320
-#define hasLogin [AccountUtil checkForLogin]
-#define havePicPw [AccountUtil checkForPicPw]
+#define hasLogin [AccountUtil checkForLogin]//是否登录
+#define havePicPw [AccountUtil checkForPicPw]//是否有手势密码
+#define isLawer YES //用户是否律师
+//友盟appkey
+#define APPKey @"5613f1c6e0f55a4b8800145d"
+#define UmengAppkey @"5613f1c6e0f55a4b8800145d"
+//新浪微博APPKey
+#define SinaAppKey @"2344161925"
+
+//QQAppKey
+#define QQAppKey @""
+#define QQAppId @""
+
+//微信APPKey
+#define WXAppKey @"wxe742b302525bd7fb"
+#define WXAppId @"wxd94632aabd99352c"
+#define WXAppSecret @"25dae35c6173b6e440933bafc8ad897b"
 
 #define BaseColor [UIColor colorWithRed:0.f green:140.f/255 blue:214.f/255 alpha:1]//基础色
 #define BackGroundColor [UIColor colorWithRed:234.f/255 green:234.f/255 blue:234.f/255 alpha:1] //背景色

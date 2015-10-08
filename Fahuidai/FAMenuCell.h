@@ -11,6 +11,7 @@ typedef enum {
     MenuCellTypeHome = 0,//首页
     MenuCellTypeBid,//发标
     MenuCellTypeUser,//用户
+    MenuCellTypeLawer,//律师
     MenuCellTypeMore//更多
 } MenuCellType;
 @interface FAMenuCell : UITableViewCell

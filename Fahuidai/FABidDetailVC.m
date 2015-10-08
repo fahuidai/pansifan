@@ -84,6 +84,24 @@
     return label;
 }
 - (void)share{
-    [UMSocialSnsService presentSnsIconSheetView:self appKey:APPKey shareText:@"分享" shareImage:nil shareToSnsNames:@[UMShareToSina,UMShareToTencent,UMShareToRenren] delegate:self];
+    [UMSocialSnsService presentSnsIconSheetView:self
+                                         appKey:APPKey
+                                      shareText:@"友盟社会化分享让您快速实现分享等社会化功能，www.umeng.com/social"
+                                     shareImage:[UIImage imageNamed:@"icon.png"]
+                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone,UMShareToTencent,UMShareToSms,UMShareToEmail,UMShareToDouban]
+                                       delegate:self];
+  
 }
+
+//实现回调方法（可选）：
+-(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
+{
+    //根据`responseCode`得到发送结果,如果分享成功
+    if(response.responseCode == UMSResponseCodeSuccess)
+    {
+        //得到分享到的微博平台名
+        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+    }
+}
+
 @end

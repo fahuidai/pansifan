@@ -9,6 +9,7 @@
 #import "FAMenuVC.h"
 #import "FALoginVC.h"
 #import "FAMenuCell.h"
+#import "AccountUtil.h"
 @interface FAMenuVC ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
@@ -32,9 +33,12 @@
     self.phoneCallBtn.layer.borderColor = [UIColor whiteColor].CGColor;
     self.phoneCallBtn.layer.cornerRadius = 3;
     
-    if (isIphone6) {
-        self.tableView.rowHeight = 66;
-    }
+//    if (isIphone6) {
+//        self.tableView.rowHeight = 66;
+//        CGRect rect = self.tableView.frame;
+//        CGRect newRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height+60);
+//        self.tableView.frame = newRect;
+//    }
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -49,6 +53,9 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (hasLogin && isLawer) {
+        return 5;
+    }
     return 4;
 }
 
@@ -66,6 +73,9 @@
             break;
         case 3:
             cell = [FAMenuCell cellWithType:MenuCellTypeMore];
+            break;
+        case 4:
+            cell = [FAMenuCell cellWithType:MenuCellTypeLawer];
             break;
         default:
             break;
@@ -91,6 +101,9 @@
             break;
         case 3:
             title = @"more";
+            break;
+        case 4:
+            title = @"lawer";
             break;
         default:
             break;

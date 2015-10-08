@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FARegisterVC">
             <connections>
+                <outlet property="scrollView" destination="jf1-FR-ajD" id="RRT-4M-bBu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,30 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jf1-FR-ajD">
+                    <rect key="frame" x="0.0" y="90" width="600" height="510"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.91596422700000002" green="0.91692365679999999" blue="0.91820004109999998" alpha="1" colorSpace="calibratedRGB"/>
+                </scrollView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="g3L-M0-uhV">
+                    <rect key="frame" x="240" y="14" width="121" height="29"/>
+                    <animations/>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
             <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jf1-FR-ajD" secondAttribute="bottom" id="Lcs-Nh-SsR"/>
+                <constraint firstItem="jf1-FR-ajD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q0v-Fo-rHd"/>
+                <constraint firstAttribute="trailing" secondItem="jf1-FR-ajD" secondAttribute="trailing" id="V1u-em-NgW"/>
+                <constraint firstItem="g3L-M0-uhV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="rWB-Sv-Gi8"/>
+                <constraint firstItem="g3L-M0-uhV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rwH-BW-v59"/>
+                <constraint firstItem="jf1-FR-ajD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="z34-Ng-2mk"/>
+            </constraints>
             <point key="canvasLocation" x="262" y="303"/>
         </view>
     </objects>

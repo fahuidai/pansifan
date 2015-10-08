@@ -17,6 +17,7 @@
 #import "AccountUtil.h"
 #import "FALoginVC.h"
 #import "IMPassWordView.h"
+#import "FALawerVC.h"
 typedef enum state {
     kStateHome,
     kStateMenu
@@ -222,8 +223,11 @@ static const CGFloat menuStartNarrowRatio  = 0.70;
                 nextVC = [[FAUserDetailVC alloc]init];
             }
             if ([title isEqualToString:@"more"]) {
-            nextVC = [[FAMoreVC alloc]init];
+                nextVC = [[FAMoreVC alloc]init];
                 }
+            if ([title isEqualToString:@"lawer"]) {
+                nextVC = [[FALawerVC alloc]init];
+            }
             if (nextVC) {
                 [self.messageNav pushViewController:nextVC animated:NO];
                 [self showHome];
